@@ -2,7 +2,7 @@ let isim = prompt("İsminizi Giriniz");
 const gunler = ["Pazar","Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi"];
 
 document.getElementById("myName").innerText = isim;
-document.getElementById("myName").setAttribute("data-before",isim);
+if(isim != null){document.getElementById("myName").setAttribute("data-before",isim);}
 
 function showTime(){
     let tarih = new Date();
